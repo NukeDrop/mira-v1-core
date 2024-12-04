@@ -31,6 +31,8 @@ pub mod common {
     pub async fn deploy_amm(wallet: &WalletUnlocked) -> MiraAMMContract {
         let configuration = LoadConfiguration::default();
 
+        println!("Current working directory: {:?}", std::env::current_dir().unwrap());
+
         let contract_id = Contract::load_from(
             AMM_CONTRACT_BINARY_PATH,
              configuration,
