@@ -3,15 +3,15 @@ use fuels::prelude::{abigen, AssetId, TxPolicies, WalletUnlocked};
 abigen!(
     Contract(
         name = "MiraAMM",
-        abi = "./contracts/mira_amm_contract/out/debug/mira_amm_contract-abi.json"
+        abi = "contracts/mira_amm_contract/out/debug/mira_amm_contract-abi.json"
     ),
     Contract(
         name = "ValidationHook",
-        abi = "./contracts/mira_validation_hook/out/debug/mira_validation_hook-abi.json"
+        abi = "contracts/mira_validation_hook/out/debug/mira_validation_hook-abi.json"
     ),
     Contract(
         name = "MockToken",
-        abi = "./contracts/mocks/mock_token/out/debug/mock_token-abi.json"
+        abi = "contracts/mocks/mock_token/out/debug/mock_token-abi.json"
     )
 );
 
