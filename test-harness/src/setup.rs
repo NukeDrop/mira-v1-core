@@ -31,7 +31,10 @@ pub mod common {
     pub async fn deploy_amm(wallet: &WalletUnlocked) -> MiraAMMContract {
         let configuration = LoadConfiguration::default();
 
-        let contract_id = Contract::load_from(AMM_CONTRACT_BINARY_PATH, configuration)
+        let contract_id = Contract::load_from(
+            AMM_CONTRACT_BINARY_PATH,
+             configuration,
+            )
             .unwrap()
             .deploy(wallet, TxPolicies::default())
             .await
